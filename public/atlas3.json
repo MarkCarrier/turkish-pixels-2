@@ -1,0 +1,1017 @@
+{
+  "frames": {
+    "medievalEnvironment_01.png": {
+      "frame": { "x": 1029, "y": 636, "w": 38, "h": 92 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 1029, "y": 636, "w": 38, "h": 92 },
+      "sourceSize": { "w": 38, "h": 92 }
+    },
+
+    "medievalEnvironment_02.png": {
+      "frame": { "x": 1030, "y": 728, "w": 37, "h": 66 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 1030, "y": 728, "w": 37, "h": 66 },
+      "sourceSize": { "w": 37, "h": 66 }
+    },
+
+    "medievalEnvironment_03.png": {
+      "frame": { "x": 1023, "y": 0, "w": 53, "h": 96 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 1023, "y": 0, "w": 53, "h": 96 },
+      "sourceSize": { "w": 53, "h": 96 }
+    },
+
+    "medievalEnvironment_04.png": {
+      "frame": { "x": 838, "y": 736, "w": 28, "h": 30 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 838, "y": 736, "w": 28, "h": 30 },
+      "sourceSize": { "w": 28, "h": 30 }
+    },
+
+    "medievalEnvironment_05.png": {
+      "frame": { "x": 766, "y": 736, "w": 72, "h": 30 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 766, "y": 736, "w": 72, "h": 30 },
+      "sourceSize": { "w": 72, "h": 30 }
+    },
+
+    "medievalEnvironment_06.png": {
+      "frame": { "x": 804, "y": 603, "w": 36, "h": 32 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 804, "y": 603, "w": 36, "h": 32 },
+      "sourceSize": { "w": 36, "h": 32 }
+    },
+
+    "medievalEnvironment_07.png": {
+      "frame": { "x": 976, "y": 963, "w": 64, "h": 56 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 976, "y": 963, "w": 64, "h": 56 },
+      "sourceSize": { "w": 64, "h": 56 }
+    },
+
+    "medievalEnvironment_08.png": {
+      "frame": { "x": 950, "y": 535, "w": 76, "h": 64 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 950, "y": 535, "w": 76, "h": 64 },
+      "sourceSize": { "w": 76, "h": 64 }
+    },
+
+    "medievalEnvironment_09.png": {
+      "frame": { "x": 950, "y": 465, "w": 76, "h": 70 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 950, "y": 465, "w": 76, "h": 70 },
+      "sourceSize": { "w": 76, "h": 70 }
+    },
+
+    "medievalEnvironment_10.png": {
+      "frame": { "x": 950, "y": 395, "w": 76, "h": 70 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 950, "y": 395, "w": 76, "h": 70 },
+      "sourceSize": { "w": 76, "h": 70 }
+    },
+
+    "medievalEnvironment_11.png": {
+      "frame": { "x": 950, "y": 325, "w": 76, "h": 70 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 950, "y": 325, "w": 76, "h": 70 },
+      "sourceSize": { "w": 76, "h": 70 }
+    },
+
+    "medievalEnvironment_12.png": {
+      "frame": { "x": 903, "y": 255, "w": 40, "h": 46 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 903, "y": 255, "w": 40, "h": 46 },
+      "sourceSize": { "w": 40, "h": 46 }
+    },
+
+    "medievalEnvironment_13.png": {
+      "frame": { "x": 768, "y": 603, "w": 36, "h": 32 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 768, "y": 603, "w": 36, "h": 32 },
+      "sourceSize": { "w": 36, "h": 32 }
+    },
+
+    "medievalEnvironment_14.png": {
+      "frame": { "x": 951, "y": 190, "w": 64, "h": 56 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 951, "y": 190, "w": 64, "h": 56 },
+      "sourceSize": { "w": 64, "h": 56 }
+    },
+
+    "medievalEnvironment_15.png": {
+      "frame": { "x": 900, "y": 950, "w": 76, "h": 64 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 900, "y": 950, "w": 76, "h": 64 },
+      "sourceSize": { "w": 76, "h": 64 }
+    },
+
+    "medievalEnvironment_16.png": {
+      "frame": { "x": 900, "y": 1014, "w": 76, "h": 70 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 900, "y": 1014, "w": 76, "h": 70 },
+      "sourceSize": { "w": 76, "h": 70 }
+    },
+
+    "medievalEnvironment_17.png": {
+      "frame": { "x": 951, "y": 120, "w": 76, "h": 70 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 951, "y": 120, "w": 76, "h": 70 },
+      "sourceSize": { "w": 76, "h": 70 }
+    },
+
+    "medievalEnvironment_18.png": {
+      "frame": { "x": 950, "y": 255, "w": 76, "h": 70 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 950, "y": 255, "w": 76, "h": 70 },
+      "sourceSize": { "w": 76, "h": 70 }
+    },
+
+    "medievalEnvironment_19.png": {
+      "frame": { "x": 863, "y": 255, "w": 40, "h": 47 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 863, "y": 255, "w": 40, "h": 47 },
+      "sourceSize": { "w": 40, "h": 47 }
+    },
+
+    "medievalEnvironment_20.png": {
+      "frame": { "x": 1026, "y": 318, "w": 43, "h": 96 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 1026, "y": 318, "w": 43, "h": 96 },
+      "sourceSize": { "w": 43, "h": 96 }
+    },
+
+    "medievalEnvironment_21.png": {
+      "frame": { "x": 1076, "y": 0, "w": 28, "h": 64 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 1076, "y": 0, "w": 28, "h": 64 },
+      "sourceSize": { "w": 28, "h": 64 }
+    },
+
+    "medievalStructure_01.png": {
+      "frame": { "x": 957, "y": 699, "w": 72, "h": 84 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 957, "y": 699, "w": 72, "h": 84 },
+      "sourceSize": { "w": 72, "h": 84 }
+    },
+
+    "medievalStructure_02.png": {
+      "frame": { "x": 384, "y": 1024, "w": 120, "h": 76 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 384, "y": 1024, "w": 120, "h": 76 },
+      "sourceSize": { "w": 120, "h": 76 }
+    },
+
+    "medievalStructure_03.png": {
+      "frame": { "x": 608, "y": 1024, "w": 104, "h": 68 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 608, "y": 1024, "w": 104, "h": 68 },
+      "sourceSize": { "w": 104, "h": 68 }
+    },
+
+    "medievalStructure_04.png": {
+      "frame": { "x": 812, "y": 1013, "w": 88, "h": 72 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 812, "y": 1013, "w": 88, "h": 72 },
+      "sourceSize": { "w": 88, "h": 72 }
+    },
+
+    "medievalStructure_05.png": {
+      "frame": { "x": 862, "y": 399, "w": 88, "h": 84 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 862, "y": 399, "w": 88, "h": 84 },
+      "sourceSize": { "w": 88, "h": 84 }
+    },
+
+    "medievalStructure_06.png": {
+      "frame": { "x": 128, "y": 1024, "w": 120, "h": 76 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 128, "y": 1024, "w": 120, "h": 76 },
+      "sourceSize": { "w": 120, "h": 76 }
+    },
+
+    "medievalStructure_07.png": {
+      "frame": { "x": 504, "y": 1024, "w": 104, "h": 68 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 504, "y": 1024, "w": 104, "h": 68 },
+      "sourceSize": { "w": 104, "h": 68 }
+    },
+
+    "medievalStructure_08.png": {
+      "frame": { "x": 959, "y": 0, "w": 64, "h": 80 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 959, "y": 0, "w": 64, "h": 80 },
+      "sourceSize": { "w": 64, "h": 80 }
+    },
+
+    "medievalStructure_09.png": {
+      "frame": { "x": 760, "y": 893, "w": 112, "h": 120 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 760, "y": 893, "w": 112, "h": 120 },
+      "sourceSize": { "w": 112, "h": 120 }
+    },
+
+    "medievalStructure_10.png": {
+      "frame": { "x": 862, "y": 555, "w": 88, "h": 80 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 862, "y": 555, "w": 88, "h": 80 },
+      "sourceSize": { "w": 88, "h": 80 }
+    },
+
+    "medievalStructure_11.png": {
+      "frame": { "x": 863, "y": 175, "w": 88, "h": 80 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 863, "y": 175, "w": 88, "h": 80 },
+      "sourceSize": { "w": 88, "h": 80 }
+    },
+
+    "medievalStructure_12.png": {
+      "frame": { "x": 1026, "y": 514, "w": 40, "h": 72 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 1026, "y": 514, "w": 40, "h": 72 },
+      "sourceSize": { "w": 40, "h": 72 }
+    },
+
+    "medievalStructure_13.png": {
+      "frame": { "x": 768, "y": 0, "w": 103, "h": 103 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 768, "y": 0, "w": 103, "h": 103 },
+      "sourceSize": { "w": 103, "h": 103 }
+    },
+
+    "medievalStructure_14.png": {
+      "frame": { "x": 640, "y": 768, "w": 125, "h": 125 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 640, "y": 768, "w": 125, "h": 125 },
+      "sourceSize": { "w": 125, "h": 125 }
+    },
+
+    "medievalStructure_15.png": {
+      "frame": { "x": 640, "y": 640, "w": 126, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 640, "y": 640, "w": 126, "h": 128 },
+      "sourceSize": { "w": 126, "h": 128 }
+    },
+
+    "medievalStructure_16.png": {
+      "frame": { "x": 869, "y": 736, "w": 88, "h": 120 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 869, "y": 736, "w": 88, "h": 120 },
+      "sourceSize": { "w": 88, "h": 120 }
+    },
+
+    "medievalStructure_17.png": {
+      "frame": { "x": 871, "y": 0, "w": 88, "h": 120 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 871, "y": 0, "w": 88, "h": 120 },
+      "sourceSize": { "w": 88, "h": 120 }
+    },
+
+    "medievalStructure_18.png": {
+      "frame": { "x": 862, "y": 303, "w": 88, "h": 96 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 862, "y": 303, "w": 88, "h": 96 },
+      "sourceSize": { "w": 88, "h": 96 }
+    },
+
+    "medievalStructure_19.png": {
+      "frame": { "x": 765, "y": 768, "w": 104, "h": 120 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 765, "y": 768, "w": 104, "h": 120 },
+      "sourceSize": { "w": 104, "h": 120 }
+    },
+
+    "medievalStructure_20.png": {
+      "frame": { "x": 766, "y": 640, "w": 104, "h": 96 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 766, "y": 640, "w": 104, "h": 96 },
+      "sourceSize": { "w": 104, "h": 96 }
+    },
+
+    "medievalStructure_21.png": {
+      "frame": { "x": 640, "y": 893, "w": 120, "h": 120 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 640, "y": 893, "w": 120, "h": 120 },
+      "sourceSize": { "w": 120, "h": 120 }
+    },
+
+    "medievalStructure_22.png": {
+      "frame": { "x": 976, "y": 883, "w": 64, "h": 80 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 976, "y": 883, "w": 64, "h": 80 },
+      "sourceSize": { "w": 64, "h": 80 }
+    },
+
+    "medievalStructure_23.png": {
+      "frame": { "x": 862, "y": 483, "w": 88, "h": 72 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 862, "y": 483, "w": 88, "h": 72 },
+      "sourceSize": { "w": 88, "h": 72 }
+    },
+
+    "medievalTile_01.png": {
+      "frame": { "x": 0, "y": 640, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 640, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_02.png": {
+      "frame": { "x": 0, "y": 768, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 768, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_03.png": {
+      "frame": { "x": 0, "y": 896, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 896, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_04.png": {
+      "frame": { "x": 128, "y": 128, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 128, "y": 128, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_05.png": {
+      "frame": { "x": 128, "y": 384, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 128, "y": 384, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_06.png": {
+      "frame": { "x": 128, "y": 640, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 128, "y": 640, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_07.png": {
+      "frame": { "x": 128, "y": 768, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 128, "y": 768, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_08.png": {
+      "frame": { "x": 1026, "y": 190, "w": 60, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 1026, "y": 190, "w": 60, "h": 128 },
+      "sourceSize": { "w": 60, "h": 128 }
+    },
+
+    "medievalTile_09.png": {
+      "frame": { "x": 0, "y": 1024, "w": 128, "h": 60 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 1024, "w": 128, "h": 60 },
+      "sourceSize": { "w": 128, "h": 60 }
+    },
+
+    "medievalTile_10.png": {
+      "frame": { "x": 256, "y": 128, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 256, "y": 128, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_11.png": {
+      "frame": { "x": 256, "y": 256, "w": 128, "h": 94 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 256, "y": 256, "w": 128, "h": 94 },
+      "sourceSize": { "w": 128, "h": 94 }
+    },
+
+    "medievalTile_12.png": {
+      "frame": { "x": 256, "y": 606, "w": 128, "h": 94 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 256, "y": 606, "w": 128, "h": 94 },
+      "sourceSize": { "w": 128, "h": 94 }
+    },
+
+    "medievalTile_13.png": {
+      "frame": { "x": 256, "y": 700, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 256, "y": 700, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_14.png": {
+      "frame": { "x": 640, "y": 0, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 640, "y": 0, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_15.png": {
+      "frame": { "x": 640, "y": 128, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 640, "y": 128, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_16.png": {
+      "frame": { "x": 640, "y": 384, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 640, "y": 384, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_17.png": {
+      "frame": { "x": 640, "y": 512, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 640, "y": 512, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_18.png": {
+      "frame": { "x": 384, "y": 640, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 384, "y": 640, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_19.png": {
+      "frame": { "x": 0, "y": 128, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 128, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_20.png": {
+      "frame": { "x": 0, "y": 0, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_21.png": {
+      "frame": { "x": 384, "y": 512, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 384, "y": 512, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_22.png": {
+      "frame": { "x": 768, "y": 303, "w": 94, "h": 86 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 768, "y": 303, "w": 94, "h": 86 },
+      "sourceSize": { "w": 94, "h": 86 }
+    },
+
+    "medievalTile_23.png": {
+      "frame": { "x": 870, "y": 635, "w": 86, "h": 94 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 870, "y": 635, "w": 86, "h": 94 },
+      "sourceSize": { "w": 86, "h": 94 }
+    },
+
+    "medievalTile_24.png": {
+      "frame": { "x": 712, "y": 1013, "w": 100, "h": 72 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 712, "y": 1013, "w": 100, "h": 72 },
+      "sourceSize": { "w": 100, "h": 72 }
+    },
+
+    "medievalTile_25.png": {
+      "frame": { "x": 768, "y": 389, "w": 94, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 768, "y": 389, "w": 94, "h": 128 },
+      "sourceSize": { "w": 94, "h": 128 }
+    },
+
+    "medievalTile_26.png": {
+      "frame": { "x": 768, "y": 175, "w": 95, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 768, "y": 175, "w": 95, "h": 128 },
+      "sourceSize": { "w": 95, "h": 128 }
+    },
+
+    "medievalTile_27.png": {
+      "frame": { "x": 384, "y": 896, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 384, "y": 896, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_28.png": {
+      "frame": { "x": 512, "y": 640, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 512, "y": 640, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_29.png": {
+      "frame": { "x": 0, "y": 384, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 384, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_30.png": {
+      "frame": { "x": 0, "y": 256, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 256, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_31.png": {
+      "frame": { "x": 512, "y": 128, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 512, "y": 128, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_32.png": {
+      "frame": { "x": 512, "y": 256, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 512, "y": 256, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_33.png": {
+      "frame": { "x": 512, "y": 384, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 512, "y": 384, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_34.png": {
+      "frame": { "x": 640, "y": 256, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 640, "y": 256, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_35.png": {
+      "frame": { "x": 512, "y": 0, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 512, "y": 0, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_36.png": {
+      "frame": { "x": 872, "y": 856, "w": 86, "h": 94 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 872, "y": 856, "w": 86, "h": 94 },
+      "sourceSize": { "w": 86, "h": 94 }
+    },
+
+    "medievalTile_37.png": {
+      "frame": { "x": 768, "y": 517, "w": 94, "h": 86 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 768, "y": 517, "w": 94, "h": 86 },
+      "sourceSize": { "w": 94, "h": 86 }
+    },
+
+    "medievalTile_38.png": {
+      "frame": { "x": 768, "y": 103, "w": 100, "h": 72 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 768, "y": 103, "w": 100, "h": 72 },
+      "sourceSize": { "w": 100, "h": 72 }
+    },
+
+    "medievalTile_39.png": {
+      "frame": { "x": 956, "y": 599, "w": 72, "h": 100 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 956, "y": 599, "w": 72, "h": 100 },
+      "sourceSize": { "w": 72, "h": 100 }
+    },
+
+    "medievalTile_40.png": {
+      "frame": { "x": 958, "y": 783, "w": 72, "h": 100 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 958, "y": 783, "w": 72, "h": 100 },
+      "sourceSize": { "w": 72, "h": 100 }
+    },
+
+    "medievalTile_41.png": {
+      "frame": { "x": 512, "y": 896, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 512, "y": 896, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_42.png": {
+      "frame": { "x": 512, "y": 768, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 512, "y": 768, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_43.png": {
+      "frame": { "x": 256, "y": 478, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 256, "y": 478, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_44.png": {
+      "frame": { "x": 512, "y": 512, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 512, "y": 512, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_45.png": {
+      "frame": { "x": 256, "y": 350, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 256, "y": 350, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_46.png": {
+      "frame": { "x": 256, "y": 0, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 256, "y": 0, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_47.png": {
+      "frame": { "x": 128, "y": 896, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 128, "y": 896, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_48.png": {
+      "frame": { "x": 128, "y": 512, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 128, "y": 512, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_49.png": {
+      "frame": { "x": 128, "y": 256, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 128, "y": 256, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_50.png": {
+      "frame": { "x": 384, "y": 768, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 384, "y": 768, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_51.png": {
+      "frame": { "x": 128, "y": 0, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 128, "y": 0, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_52.png": {
+      "frame": { "x": 0, "y": 512, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 512, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_53.png": {
+      "frame": { "x": 384, "y": 384, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 384, "y": 384, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_54.png": {
+      "frame": { "x": 384, "y": 256, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 384, "y": 256, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_55.png": {
+      "frame": { "x": 384, "y": 128, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 384, "y": 128, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_56.png": {
+      "frame": { "x": 384, "y": 0, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 384, "y": 0, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_57.png": {
+      "frame": { "x": 256, "y": 956, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 256, "y": 956, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalTile_58.png": {
+      "frame": { "x": 256, "y": 828, "w": 128, "h": 128 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 256, "y": 828, "w": 128, "h": 128 },
+      "sourceSize": { "w": 128, "h": 128 }
+    },
+
+    "medievalUnit_01.png": {
+      "frame": { "x": 1067, "y": 96, "w": 33, "h": 48 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 1067, "y": 96, "w": 33, "h": 48 },
+      "sourceSize": { "w": 33, "h": 48 }
+    },
+
+    "medievalUnit_02.png": {
+      "frame": { "x": 909, "y": 120, "w": 41, "h": 52 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 909, "y": 120, "w": 41, "h": 52 },
+      "sourceSize": { "w": 41, "h": 52 }
+    },
+
+    "medievalUnit_03.png": {
+      "frame": { "x": 1030, "y": 794, "w": 36, "h": 50 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 1030, "y": 794, "w": 36, "h": 50 },
+      "sourceSize": { "w": 36, "h": 50 }
+    },
+
+    "medievalUnit_04.png": {
+      "frame": { "x": 1026, "y": 464, "w": 40, "h": 50 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 1026, "y": 464, "w": 40, "h": 50 },
+      "sourceSize": { "w": 40, "h": 50 }
+    },
+
+    "medievalUnit_05.png": {
+      "frame": { "x": 1066, "y": 794, "w": 33, "h": 48 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 1066, "y": 794, "w": 33, "h": 48 },
+      "sourceSize": { "w": 33, "h": 48 }
+    },
+
+    "medievalUnit_06.png": {
+      "frame": { "x": 1058, "y": 994, "w": 33, "h": 48 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 1058, "y": 994, "w": 33, "h": 48 },
+      "sourceSize": { "w": 33, "h": 48 }
+    },
+
+    "medievalUnit_07.png": {
+      "frame": { "x": 1058, "y": 1042, "w": 33, "h": 48 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 1058, "y": 1042, "w": 33, "h": 48 },
+      "sourceSize": { "w": 33, "h": 48 }
+    },
+
+    "medievalUnit_08.png": {
+      "frame": { "x": 868, "y": 120, "w": 41, "h": 52 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 868, "y": 120, "w": 41, "h": 52 },
+      "sourceSize": { "w": 41, "h": 52 }
+    },
+
+    "medievalUnit_09.png": {
+      "frame": { "x": 1040, "y": 844, "w": 36, "h": 50 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 1040, "y": 844, "w": 36, "h": 50 },
+      "sourceSize": { "w": 36, "h": 50 }
+    },
+
+    "medievalUnit_10.png": {
+      "frame": { "x": 1027, "y": 96, "w": 40, "h": 50 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 1027, "y": 96, "w": 40, "h": 50 },
+      "sourceSize": { "w": 40, "h": 50 }
+    },
+
+    "medievalUnit_11.png": {
+      "frame": { "x": 1066, "y": 462, "w": 33, "h": 48 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 1066, "y": 462, "w": 33, "h": 48 },
+      "sourceSize": { "w": 33, "h": 48 }
+    },
+
+    "medievalUnit_12.png": {
+      "frame": { "x": 1068, "y": 558, "w": 33, "h": 48 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 1068, "y": 558, "w": 33, "h": 48 },
+      "sourceSize": { "w": 33, "h": 48 }
+    },
+
+    "medievalUnit_13.png": {
+      "frame": { "x": 1066, "y": 414, "w": 33, "h": 48 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 1066, "y": 414, "w": 33, "h": 48 },
+      "sourceSize": { "w": 33, "h": 48 }
+    },
+
+    "medievalUnit_14.png": {
+      "frame": { "x": 1017, "y": 1019, "w": 41, "h": 52 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 1017, "y": 1019, "w": 41, "h": 52 },
+      "sourceSize": { "w": 41, "h": 52 }
+    },
+
+    "medievalUnit_15.png": {
+      "frame": { "x": 1040, "y": 894, "w": 36, "h": 50 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 1040, "y": 894, "w": 36, "h": 50 },
+      "sourceSize": { "w": 36, "h": 50 }
+    },
+
+    "medievalUnit_16.png": {
+      "frame": { "x": 1026, "y": 414, "w": 40, "h": 50 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 1026, "y": 414, "w": 40, "h": 50 },
+      "sourceSize": { "w": 40, "h": 50 }
+    },
+
+    "medievalUnit_17.png": {
+      "frame": { "x": 1066, "y": 510, "w": 33, "h": 48 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 1066, "y": 510, "w": 33, "h": 48 },
+      "sourceSize": { "w": 33, "h": 48 }
+    },
+
+    "medievalUnit_18.png": {
+      "frame": { "x": 1067, "y": 636, "w": 33, "h": 48 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 1067, "y": 636, "w": 33, "h": 48 },
+      "sourceSize": { "w": 33, "h": 48 }
+    },
+
+    "medievalUnit_19.png": {
+      "frame": { "x": 1067, "y": 684, "w": 33, "h": 48 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 1067, "y": 684, "w": 33, "h": 48 },
+      "sourceSize": { "w": 33, "h": 48 }
+    },
+
+    "medievalUnit_20.png": {
+      "frame": { "x": 976, "y": 1019, "w": 41, "h": 52 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 976, "y": 1019, "w": 41, "h": 52 },
+      "sourceSize": { "w": 41, "h": 52 }
+    },
+
+    "medievalUnit_21.png": {
+      "frame": { "x": 1040, "y": 944, "w": 36, "h": 50 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 1040, "y": 944, "w": 36, "h": 50 },
+      "sourceSize": { "w": 36, "h": 50 }
+    },
+
+    "medievalUnit_22.png": {
+      "frame": { "x": 1028, "y": 586, "w": 40, "h": 50 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 1028, "y": 586, "w": 40, "h": 50 },
+      "sourceSize": { "w": 40, "h": 50 }
+    },
+
+    "medievalUnit_23.png": {
+      "frame": { "x": 1067, "y": 732, "w": 33, "h": 48 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 1067, "y": 732, "w": 33, "h": 48 },
+      "sourceSize": { "w": 33, "h": 48 }
+    },
+
+    "medievalUnit_24.png": {
+      "frame": { "x": 1069, "y": 318, "w": 33, "h": 48 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 1069, "y": 318, "w": 33, "h": 48 },
+      "sourceSize": { "w": 33, "h": 48 }
+    }
+  },
+  "meta": {
+    "app": "tonyapp",
+    "version": "1.0",
+    "image": "medievalRTS_spritesheet@2.png",
+    "size": { "w": 1104, "h": 1100 }
+  }
+}
