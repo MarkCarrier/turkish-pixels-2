@@ -22,6 +22,7 @@ module.exports = {
       ]
     }),
     new HtmlWebpackPlugin({
+      cache: false,
       template: './public/index.html'
     })
   ]

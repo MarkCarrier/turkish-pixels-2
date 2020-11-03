@@ -1,7 +1,16 @@
 import { createCanvas, setScene } from './staging'
 import { getUserData } from './user-data'
 import { BehaviorSubject, Subject, combineLatest } from 'rxjs'
-import { tap, distinct, pluck, merge, scan, map } from 'rxjs/operators'
+import {
+  tap,
+  distinct,
+  pluck,
+  merge,
+  scan,
+  map,
+  withLatestFrom,
+  shareReplay
+} from 'rxjs/operators'
 
 start().catch((e) => {
   console.log('SOMETHING BAD HAPPENED')
@@ -9,12 +18,11 @@ start().catch((e) => {
 })
 
 async function start() {
-  const contextStore = RxReduxStore(
+  const contextStore = createStateStore(
     { scene: 'none', userData: {} },
     {
       changeScene: (newScene) => (state) => ({ ...state, scene: newScene }),
       setUserData: (userData) => (state) => ({ ...state, userData }),
-      setRenderer: (renderer) => (state) => ({ ...state, renderer }),
       setCanvasSettings: (canvasSettings) => (state) => ({
         ...state,
         canvasSettings
@@ -32,33 +40,31 @@ async function start() {
 async function setupSceneUpdating(renderer, contextStore) {
   const sceneChange$ = contextStore.store$.pipe(pluck('scene'), distinct())
 
-  combineLatest([sceneChange$, contextStore.store$]).subscribe(
-    ([newScene, context]) => {
-      setScene(renderer, context, contextStore)
-    }
-  )
+  sceneChange$.subscribe((_) => {
+    setScene(renderer, contextStore)
+  })
 }
 
-function RxReduxStore(initial_state, reducers) {
+function createStateStore(initial_state, reducers) {
+  //From https://observablehq.com/@argyleink/redux-in-a-single-function-with-rxjs
   // pass in state and action functions
-  let streams = {},
-    actions = {},
-    store$
+  let actionStreams = {}
+  let actions = {}
 
   for (let action in reducers) {
     // pass in reducers keyed by action name
     let subject$ = new Subject() // subject for action/reducer data flow
-    streams[`${action}$`] = subject$.pipe(map(reducers[action])) // stash a reducer mapped to a stream
+    actionStreams[`${action}$`] = subject$.pipe(map(reducers[action])) // stash a reducer mapped to a stream
     actions[action] = (args) => subject$.next(args) // forward action params to reducer stream
   }
 
-  store$ = new BehaviorSubject(initial_state).pipe(
-    // main store stream seeded with state
-    merge(...Object.values(streams)), // merge all reducers into single stream
-    scan((state, reducer) => reducer(state))
+  let store$ = new BehaviorSubject(initial_state).pipe(
+    merge(...Object.values(actionStreams)), // merge all reducers into single stream
+    scan((state, reducer) => reducer(state)),
+    shareReplay(1)
   ) // pass state to each reducer
 
-  return { store$, actions } // return store observable and action streams
+  return { store$, actions }
 }
 
 function Logger(prefix, observable) {

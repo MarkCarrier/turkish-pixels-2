@@ -7,7 +7,7 @@
     "build:dev": "webpack --mode development",
     "build:production": "webpack --mode production",
     "serve": "serve ./build",
-    "start": "webpack --watch"
+    "start": "webpack-dev-server --watch-poll"
   },
   "keywords": [],
   "author": "",
