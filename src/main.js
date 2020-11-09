@@ -3,7 +3,7 @@ import { getUserData } from './user-data'
 import { BehaviorSubject, Subject, combineLatest } from 'rxjs'
 import {
   tap,
-  distinct,
+  distinctUntilChanged,
   pluck,
   merge,
   scan,
@@ -18,27 +18,30 @@ start().catch((e) => {
 })
 
 async function start() {
-  const contextStore = createStateStore(
-    { scene: 'none', userData: {} },
-    {
-      changeScene: (newScene) => (state) => ({ ...state, scene: newScene }),
-      setUserData: (userData) => (state) => ({ ...state, userData }),
-      setCanvasSettings: (canvasSettings) => (state) => ({
-        ...state,
-        canvasSettings
-      })
-    }
-  )
-  Logger('context', contextStore.store$)
-  const userData = await getUserData()
-  contextStore.actions.setUserData(userData)
-  const renderer = await createCanvas(contextStore)
-  await setupSceneUpdating(renderer, contextStore)
-  contextStore.actions.changeScene('start')
+  // const contextStore = createStateStore(
+  //   { scene: 'none', userData: {} },
+  //   {
+  //     changeScene: (newScene) => (state) => ({ ...state, scene: newScene }),
+  //     setUserData: (userData) => (state) => ({ ...state, userData }),
+  //     setCanvasSettings: (canvasSettings) => (state) => ({
+  //       ...state,
+  //       canvasSettings
+  //     })
+  //   }
+  // )
+  //Logger('context', contextStore.store$)
+
+  let userData = await getUserData()
+  let [renderer, gameState] = await createCanvas({ userData })
+  gameState.scene = 'start'
+  gameState = await setScene(renderer, gameState)
 }
 
 async function setupSceneUpdating(renderer, contextStore) {
-  const sceneChange$ = contextStore.store$.pipe(pluck('scene'), distinct())
+  const sceneChange$ = contextStore.store$.pipe(
+    pluck('scene'),
+    distinctUntilChanged()
+  )
 
   sceneChange$.subscribe((_) => {
     setScene(renderer, contextStore)
