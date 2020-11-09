@@ -1,22 +1,22 @@
-import { defer, interval, fromEvent, merge, of } from 'rxjs'
 import {
+  animationFrameScheduler,
+  defer,
+  fromEvent,
+  interval,
+  merge,
+  of
+} from 'rxjs'
+import {
+  distinctUntilChanged,
+  map,
+  scan,
   share,
   tap,
-  map,
-  withLatestFrom,
-  filter,
-  buffer,
-  mergeAll,
-  groupBy,
-  distinctUntilChanged,
-  mergeMap,
-  reduce,
-  scan,
-  bufferTime,
-  distinct
+  withLatestFrom
 } from 'rxjs/operators'
-import { animationFrameScheduler } from 'rxjs'
+
 import { keyNames } from './keys.util'
+import * as tilemapData from './tilemap-data.json'
 
 export function setScene(renderer, gameState) {
   return new Promise((resolve, reject) => {
@@ -33,6 +33,9 @@ export function setScene(renderer, gameState) {
 
     const atlasName = 'atlas3.json'
     const groundTileName = 'medievalTile_58.png'
+    const treeTileNames = new Array(8)
+      .fill(0)
+      .map((_, index) => `medievalTile_${index + 41}.png`)
     const unitTileName = 'medievalUnit_24.png'
     const tileSize = 128
     const resX = gameState.canvasSettings.resolutionX
@@ -79,12 +82,12 @@ export function setScene(renderer, gameState) {
       const atlasTextures = resources[atlasName].textures
       drawGroundTiles(atlasTextures)
       addPlayer(atlasTextures)
-      const prepareNextFrame = createFramemaker(atlasTextures)
+      const makeFrame = createFramemaker(atlasTextures)
 
       let frames$ = buildAnimationFrameClock().pipe(
         withLatestFrom(keyHolds$, gameState$),
         map(([deltaTime, keysDown, gameState]) =>
-          prepareNextFrame(deltaTime, gameState, keysDown)
+          makeFrame(deltaTime, gameState, keysDown)
         )
       )
 
@@ -107,20 +110,31 @@ export function setScene(renderer, gameState) {
     }
 
     function drawGroundTiles(atlasTextures) {
-      const numberOfTilesX = parseInt(resX / tileSize) + 10
-      const numberOfTilesY = parseInt(resY / tileSize) + 10
+      const numberOfTilesX = parseInt(resX / tileSize) + 6
+      const numberOfTilesY = parseInt(resY / tileSize) + 6
+
+      const groundOffsetX = player.x % tileSize
+      const groundOffsetY = player.y % tileSize
+
       tilemap.clear()
       for (let x = -numberOfTilesX; x <= numberOfTilesX; x++) {
         for (let y = -numberOfTilesY; y <= numberOfTilesY; y++) {
-          tilemap.addFrame(
-            atlasTextures[groundTileName],
-            x * tileSize,
-            y * tileSize
-          )
+          const tilePosX = (player.x - groundOffsetX) / tileSize + x
+          const tilePosY = (player.y - groundOffsetY) / tileSize + y
+
+          let tileTexture
+          const tileNameOverride =
+            tilemapData.groundTileOverrides[`${tilePosX}/${tilePosY}`]
+
+          if (tileNameOverride) {
+            tileTexture = atlasTextures[tileNameOverride]
+          } else {
+            tileTexture = atlasTextures[groundTileName]
+          }
+          tilemap.addFrame(tileTexture, x * tileSize, y * tileSize)
         }
       }
-      let groundOffsetX = player.x % tileSize
-      let groundOffsetY = player.y % tileSize
+
       tilemap.position.set(
         playerOffsetX + player.x - groundOffsetX,
         playerOffsetY + player.y - groundOffsetY
@@ -152,8 +166,8 @@ export function setScene(renderer, gameState) {
       const makeFrame = (deltaTime, state, inputState) => {
         stats.begin()
         if (
-          player.x % (10 * tileSize) === 0 ||
-          player.y % (10 * tileSize) === 0
+          inputState.length &&
+          (player.x % (10 * tileSize) === 0 || player.y % (10 * tileSize) === 0)
         ) {
           drawGroundTiles(atlasTextures)
         }
@@ -173,38 +187,4 @@ export function setScene(renderer, gameState) {
       return makeFrame
     }
   })
-}
-
-export async function createCanvas(gameState) {
-  const minWidth = 300
-  const minHeight = 500
-  const resolutionFactor = null // Math.round(window.devicePixelRatio * 100) / 100
-
-  const resolutionX =
-    window.innerWidth > minWidth ? window.innerWidth : minWidth
-  const resolutionY =
-    window.innerHeight > minHeight ? window.innerHeight : minHeight
-
-  let app = new PIXI.Application({
-    width: minWidth,
-    height: minHeight
-  })
-
-  app.renderer.view.style.position = 'absolute'
-  app.renderer.view.style.display = 'block'
-  app.renderer.autoDensity = true
-  app.renderer.resize(resolutionX, resolutionY)
-
-  document.body.appendChild(app.view)
-  return [
-    app,
-    {
-      ...gameState,
-      canvasSettings: {
-        resolutionFactor,
-        resolutionX,
-        resolutionY
-      }
-    }
-  ]
 }

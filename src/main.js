@@ -1,4 +1,5 @@
-import { createCanvas, setScene } from './staging'
+import { setScene } from './staging'
+import { createCanvas } from './canvas'
 import { getUserData } from './user-data'
 import { BehaviorSubject, Subject, combineLatest } from 'rxjs'
 import {
