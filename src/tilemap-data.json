@@ -1,5 +1,21 @@
 {
   "groundTileOverrides": {
+    "0/0": "medievalTile_05.png",
+    "-1/0": "medievalTile_04.png",
+    "1/0": "medievalTile_04.png",
+    "-2/0": "medievalTile_04.png",
+    "2/0": "medievalTile_04.png",
+    "-3/0": "medievalTile_04.png",
+    "3/0": "medievalTile_04.png",
+    "0/-1": "medievalTile_03.png",
+    "0/1": "medievalTile_03.png",
+    "0/-2": "medievalTile_03.png",
+    "0/2": "medievalTile_03.png",
+    "0/-3": "medievalTile_03.png",
+    "0/3": "medievalTile_03.png",
     "2/2": "medievalTile_43.png"
+  },
+  "objects": {
+    "4/0": ["medievalStructure_18.png"]
   }
 }

@@ -132,6 +132,15 @@ export function setScene(renderer, gameState) {
             tileTexture = atlasTextures[groundTileName]
           }
           tilemap.addFrame(tileTexture, x * tileSize, y * tileSize)
+
+          const extraObjects = tilemapData.objects[`${tilePosX}/${tilePosY}`]
+          if (extraObjects && extraObjects.length) {
+            tilemap.addFrame(
+              atlasTextures[extraObjects[0]],
+              x * tileSize,
+              y * tileSize
+            )
+          }
         }
       }
 
