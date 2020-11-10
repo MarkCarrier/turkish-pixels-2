@@ -13,9 +13,13 @@
     "0/2": "medievalTile_03.png",
     "0/-3": "medievalTile_03.png",
     "0/3": "medievalTile_03.png",
-    "2/2": "medievalTile_43.png"
+    "2/2": "medievalTile_43.png",
+    "-4/0": "medievalTile_33.png",
+    "0/-4": "medievalTile_18.png"
   },
   "objects": {
-    "4/0": ["medievalStructure_18.png"]
+    "4/0": ["medievalStructure_18.png"],
+    "-1/3": ["medievalStructure_03.png"],
+    "0/-4": ["medievalStructure_22.png"]
   }
 }
