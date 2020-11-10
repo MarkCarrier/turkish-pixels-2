@@ -15,9 +15,10 @@
   "devDependencies": {
     "copy-webpack-plugin": "^6.2.1",
     "html-webpack-plugin": "^4.5.0",
-    "pixi.js": "^5.3.3",
     "pixi-tilemap": "^2.1.4",
+    "pixi.js": "^5.3.3",
     "rxjs": "^6.6.3",
+    "seedrandom": "^3.0.5",
     "webpack": "^4.41.3",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.11.0"

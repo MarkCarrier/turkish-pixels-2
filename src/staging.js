@@ -17,6 +17,7 @@ import {
 } from 'rxjs/operators'
 import { keyNames } from './keys.util'
 import * as tilemapData from './tilemap-data.json'
+import * as seedrandom from 'seedrandom'
 
 export function setScene(renderer, initialGameState) {
   return new Promise((resolve, reject) => {
@@ -212,6 +213,19 @@ export function setScene(renderer, initialGameState) {
               x * tileSize,
               y * tileSize
             )
+          }
+
+          if (tilePosY < -5 || tilePosY > 5) {
+            const myrng = new seedrandom(`trees-${tilePosX}/${tilePosY}`)
+            const p = myrng()
+            if (p < 0.7) {
+              const p2 = Math.floor(myrng() * treeTileNames.length)
+              tilemap.addFrame(
+                atlasTextures[treeTileNames[p2]],
+                x * tileSize,
+                y * tileSize
+              )
+            }
           }
         }
       }
