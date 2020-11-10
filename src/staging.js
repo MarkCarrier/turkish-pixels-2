@@ -97,12 +97,23 @@ export function setScene(renderer, initialGameState) {
       )
     )
 
-    fromEvent(document, 'click')
+    const mouseUps$ = fromEvent(document, 'mouseup').pipe(
+      map((mouseEvent) => ({ x: mouseEvent.clientX, y: mouseEvent.clientY }))
+    )
+    const touchEnds$ = fromEvent(document, 'touchend').pipe(
+      map((touchEvent) => ({
+        x: touchEvent.changedTouches[0].pageX,
+        y: touchEvent.changedTouches[0].pageY
+      }))
+    )
+
+    //touchEnds$.subscribe((e) => alert(JSON.stringify(e, null, ' ')))
+
+    merge(mouseUps$, touchEnds$)
       .pipe(
-        map((mouseClick) => ({ x: mouseClick.clientX, y: mouseClick.clientY })),
         withLatestFrom(gameState$),
-        map(([mouseClick, gameState]) =>
-          processTargetClick(mouseClick, gameState)
+        map(([locationClick, gameState]) =>
+          processTargetClick(locationClick, gameState)
         )
       )
       .subscribe((gameState) => gameState$.next(gameState))
@@ -146,19 +157,19 @@ export function setScene(renderer, initialGameState) {
     function processTargetClick(click, gameState) {
       const distanceToTargetX = click.x - playerOffset.x
       const distanceToTargetY = click.y - playerOffset.y
-      const target = {
+      const mouseClickTarget = {
         x: gameState.player.x + distanceToTargetX,
         y: gameState.player.y + distanceToTargetY
       }
 
       return {
         ...gameState,
-        target
+        mouseClickTarget
       }
     }
 
     function paintGroundTiles(atlasTextures, gameState) {
-      const groundOffset = {
+      const tileCenterOffset = {
         x: gameState.player.x % tileSize,
         y: gameState.player.y % tileSize
       }
@@ -178,8 +189,10 @@ export function setScene(renderer, initialGameState) {
           y <= totalNumberOfTilesToPaint.y;
           y++
         ) {
-          const tilePosX = (gameState.player.x - groundOffset.x) / tileSize + x
-          const tilePosY = (gameState.player.y - groundOffset.y) / tileSize + y
+          const tilePosX =
+            (gameState.player.x - tileCenterOffset.x) / tileSize + x
+          const tilePosY =
+            (gameState.player.y - tileCenterOffset.y) / tileSize + y
 
           let tileTexture
           const tileNameOverride =
@@ -204,8 +217,8 @@ export function setScene(renderer, initialGameState) {
       }
 
       tilemap.position.set(
-        playerOffset.x + gameState.player.x - groundOffset.x,
-        playerOffset.y + gameState.player.y - groundOffset.y
+        playerOffset.x + gameState.player.x - tileCenterOffset.x,
+        playerOffset.y + gameState.player.y - tileCenterOffset.y
       )
 
       return {
@@ -252,26 +265,89 @@ export function setScene(renderer, initialGameState) {
           nextState = paintGroundTiles(atlasTextures, nextState)
         }
 
+        let nextPosition
         if (keyHolds.length) {
-          nextState.target = null
-          if (keyHolds.indexOf(keyNames.up_arrow) !== -1)
-            nextState.player.y -= distanceToTravel
-          else if (keyHolds.indexOf(keyNames.down_arrow) !== -1)
-            nextState.player.y += distanceToTravel
-
-          if (keyHolds.indexOf(keyNames.left_arrow) !== -1)
-            nextState.player.x -= distanceToTravel
-          else if (keyHolds.indexOf(keyNames.right_arrow) !== -1)
-            nextState.player.x += distanceToTravel
-        } else if (gameState.target) {
+          nextState.mouseClickTarget = null
+          nextPosition = calculateNextPositionFromKeys(
+            keyHolds,
+            distanceToTravel,
+            gameState
+          )
+        } else if (gameState.mouseClickTarget) {
+          nextPosition = calculateNextPositionFromMouseClickTarget(
+            distanceToTravel,
+            gameState
+          )
+          if (!nextPosition) nextState.mouseClickTarget = null
         }
 
-        tilemap.pivot.set(nextState.player.x, nextState.player.y)
+        if (nextPosition) {
+          tilemap.pivot.set(nextPosition[0], nextPosition[1])
+          nextState.player.x = nextPosition[0]
+          nextState.player.y = nextPosition[1]
+        }
         stats.end()
 
         return nextState
       }
       return makeFrame
+    }
+
+    function calculateNextPositionFromKeys(
+      keyHolds,
+      distanceToTravel,
+      gameState
+    ) {
+      let x = gameState.player.x
+      let y = gameState.player.y
+      if (keyHolds.indexOf(keyNames.up_arrow) !== -1)
+        y = gameState.player.y - distanceToTravel
+      else if (keyHolds.indexOf(keyNames.down_arrow) !== -1)
+        y = gameState.player.y + distanceToTravel
+
+      if (keyHolds.indexOf(keyNames.left_arrow) !== -1)
+        x = gameState.player.x - distanceToTravel
+      else if (keyHolds.indexOf(keyNames.right_arrow) !== -1)
+        x = gameState.player.x + distanceToTravel
+
+      return [x, y]
+    }
+
+    function calculateNextPositionFromMouseClickTarget(
+      distanceToTravel,
+      gameState
+    ) {
+      const distanceToTarget = {
+        x: gameState.mouseClickTarget.x - gameState.player.x,
+        y: gameState.mouseClickTarget.y - gameState.player.y
+      }
+
+      const totalDistanceToTarget = Math.sqrt(
+        Math.pow(distanceToTarget.x, 2) + Math.pow(distanceToTarget.y, 2)
+      )
+
+      if (totalDistanceToTarget < distanceToTravel) {
+        return null //close enough
+      }
+
+      const directionAngle = Math.atan(distanceToTarget.x / distanceToTarget.y)
+
+      const displacement = {
+        x: Math.sin(directionAngle) * distanceToTravel,
+        y: Math.cos(directionAngle) * distanceToTravel
+      }
+
+      if (gameState.mouseClickTarget.y < gameState.player.y) {
+        return [
+          gameState.player.x - displacement.x,
+          gameState.player.y - displacement.y
+        ]
+      } else {
+        return [
+          gameState.player.x + displacement.x,
+          gameState.player.y + displacement.y
+        ]
+      }
     }
 
     function repaintIsNeeded(gameState) {
