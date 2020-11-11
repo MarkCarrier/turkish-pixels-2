@@ -3,7 +3,7 @@ import {
   pluck
 } from 'rxjs/operators'
 import { createCanvas } from './utils/canvas'
-import { renderForestLand } from './forest-land/map-rendering'
+import { renderForestLand } from './forest-land/animation-setup'
 import { getUserData } from './user'
 
 start().catch((e) => {
