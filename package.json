@@ -1,8 +1,8 @@
 {
-  "name": "turkish-pixelmap",
+  "name": "tk-px",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/main.js",
   "scripts": {
     "build:dev": "webpack --mode development",
     "build:production": "webpack --mode production",
@@ -15,6 +15,7 @@
   "devDependencies": {
     "copy-webpack-plugin": "^6.2.1",
     "html-webpack-plugin": "^4.5.0",
+    "lodash": "^4.17.20",
     "pixi-tilemap": "^2.1.4",
     "pixi.js": "^5.3.3",
     "rxjs": "^6.6.3",

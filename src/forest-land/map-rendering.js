@@ -15,11 +15,11 @@ import {
   tap,
   withLatestFrom
 } from 'rxjs/operators'
-import { keyNames } from './keys.util'
+import { keyNames } from '../utils/keys'
 import * as tilemapData from './tilemap-data.json'
 import * as seedrandom from 'seedrandom'
 
-export function setScene(renderer, initialGameState) {
+export function renderForestLand(renderer, initialGameState) {
   return new Promise((resolve, reject) => {
     if (initialGameState.scene === 'none') {
       console.log('No scene to render')
