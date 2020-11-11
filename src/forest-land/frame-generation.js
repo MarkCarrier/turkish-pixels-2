@@ -76,12 +76,17 @@ export function createFramemaker(renderer, tilemap, atlasTextures, mapConfig) {
           if (p3 < 0.15) {
             const p4 = Math.floor(myrng() * wordDb.words.all.length)
             const word = wordDb.words.all[p4]
-            const text = new PIXI.Text(word.turkish, {
+            let text = new PIXI.Text(word.turkish, {
               fontFamily: 'Arial',
               fontSize: 24,
+              fontWeight: 'bold',
               fill: 0xffffff,
-              align: 'center'
+              align: 'center',
+              dropShadow: true,
+              dropShadowColor: 0x5d5d5d,
+              dropShadowDistance: 9
             })
+            text.resolution = 2
             text.updateText()
             tilemap.addFrame(
               text.texture,
