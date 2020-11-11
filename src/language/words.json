@@ -1,480 +1,482 @@
-[
+{
+  "words": [
     {
-        "id": "6a141b02-9f5f-413d-9a4e-e89db775c84d",
-        "type": "common noun",
-        "english": "home",
-        "turkish": "ev",
-        "locative": true     
+      "id": "6a141b02-9f5f-413d-9a4e-e89db775c84d",
+      "type": "common noun",
+      "english": "home",
+      "turkish": "ev",
+      "locative": true
     },
     {
-        "id": "2df55575-8cce-4803-b03d-f23eac8c8d39",
-        "type": "common noun",
-        "english": "work",
-        "turkish": "iş",
-        "locative": true
+      "id": "2df55575-8cce-4803-b03d-f23eac8c8d39",
+      "type": "common noun",
+      "english": "work",
+      "turkish": "iş",
+      "locative": true
     },
     {
-        "id":"ac25a465-1bf0-4cc3-ab93-f6b163d2c763",
-        "type": "common noun",
-        "english": "book",
-        "turkish": "kitap"
+      "id": "ac25a465-1bf0-4cc3-ab93-f6b163d2c763",
+      "type": "common noun",
+      "english": "book",
+      "turkish": "kitap"
     },
     {
-        "id":"708f9db7-2987-4b24-936a-144d7946c213",
-        "type": "common noun",
-        "english": "sea",
-        "turkish": "deniz",
-        "locative": true
+      "id": "708f9db7-2987-4b24-936a-144d7946c213",
+      "type": "common noun",
+      "english": "sea",
+      "turkish": "deniz",
+      "locative": true
     },
     {
-        "id":"73191a70-e699-430d-b9fd-e500aee46009",
-        "type": "common noun",
-        "english": "east",
-        "turkish": "doğu",
-        "locative": true
+      "id": "73191a70-e699-430d-b9fd-e500aee46009",
+      "type": "common noun",
+      "english": "east",
+      "turkish": "doğu",
+      "locative": true
     },
     {
-        "id":"b56a85f1-bd15-40a9-ae66-5d0e6136b6c3",
-        "type": "common noun",
-        "english": "west",
-        "turkish": "batı",
-        "locative": true
+      "id": "b56a85f1-bd15-40a9-ae66-5d0e6136b6c3",
+      "type": "common noun",
+      "english": "west",
+      "turkish": "batı",
+      "locative": true
     },
     {
-        "id":"ef27d269-7215-44fa-b177-cb61827394e0",
-        "type": "common noun",
-        "english": "north",
-        "turkish": "kuzey",
-        "locative": true
+      "id": "ef27d269-7215-44fa-b177-cb61827394e0",
+      "type": "common noun",
+      "english": "north",
+      "turkish": "kuzey",
+      "locative": true
     },
     {
-        "id":"ef27d269-7215-44fa-b177-cb61827394e0",
-        "type": "common noun",
-        "english": "south",
-        "turkish": "güney",
-        "locative": true
+      "id": "ef27d269-7215-44fa-b177-cb61827394e0",
+      "type": "common noun",
+      "english": "south",
+      "turkish": "güney",
+      "locative": true
     },
     {
-        "id":"51da8b85-d35f-4922-ab8d-8e6651dc3754",
-        "type": "common noun",
-        "english": "car",
-        "turkish": "araba"
+      "id": "51da8b85-d35f-4922-ab8d-8e6651dc3754",
+      "type": "common noun",
+      "english": "car",
+      "turkish": "araba"
     },
     {
-        "id":"b2e3ae6e-83d5-4d3c-91d3-a2734806cece",
-        "type": "common noun",
-        "english": "spouse",
-        "turkish": "eş"
+      "id": "b2e3ae6e-83d5-4d3c-91d3-a2734806cece",
+      "type": "common noun",
+      "english": "spouse",
+      "turkish": "eş"
     },
     {
-        "id":"7edc9c04-31a8-4102-99f6-a775d8de0c99",
-        "type": "common noun",
-        "english": "mother",
-        "turkish": "anne"
+      "id": "7edc9c04-31a8-4102-99f6-a775d8de0c99",
+      "type": "common noun",
+      "english": "mother",
+      "turkish": "anne"
     },
     {
-        "id":"8f0eec2d-1e01-4071-a38b-578b0118cb89",
-        "type": "common noun",
-        "english": "friend",
-        "turkish": "arkadaş"
+      "id": "8f0eec2d-1e01-4071-a38b-578b0118cb89",
+      "type": "common noun",
+      "english": "friend",
+      "turkish": "arkadaş"
     },
     {
-        "id":"5ce33452-d114-4f48-925c-1931f09cba02",
-        "type": "proper noun",
-        "english": "Istanbul",
-        "turkish": "İstanbul",
-        "locative": true
-    },    
+      "id": "5ce33452-d114-4f48-925c-1931f09cba02",
+      "type": "proper noun",
+      "english": "Istanbul",
+      "turkish": "İstanbul",
+      "locative": true
+    },
     {
-        "id":"44b2000e-f161-4e7d-8c77-959b52ab372c",
-        "type": "proper noun",
-        "english": "Konyalti street",
-        "turkish": "Konyaalti caddesi",
-        "locative": true
+      "id": "44b2000e-f161-4e7d-8c77-959b52ab372c",
+      "type": "proper noun",
+      "english": "Konyalti street",
+      "turkish": "Konyaalti caddesi",
+      "locative": true
     },
     {
-        "id":"e0fbb160-c25b-4506-9d86-5dfd0375f44e",
-        "type": "proper noun",
-        "english": "Ankara",
-        "turkish": "Ankara",
-        "locative": true
+      "id": "e0fbb160-c25b-4506-9d86-5dfd0375f44e",
+      "type": "proper noun",
+      "english": "Ankara",
+      "turkish": "Ankara",
+      "locative": true
     },
     {
-        "id": "a9715cf9-b311-4b7c-bfcf-a87c7c4aac95",
-        "type": "verb",
-        "english": "to go",
-        "turkish": "gitmek",
-        "locative": true
+      "id": "a9715cf9-b311-4b7c-bfcf-a87c7c4aac95",
+      "type": "verb",
+      "english": "to go",
+      "turkish": "gitmek",
+      "locative": true
     },
     {
-        "id": "c1ccdd2f-5a50-42fe-9057-1d26ad5b3e0f",
-        "type": "verb",
-        "english": "to come",
-        "turkish": "gelmek",
-        "locative": true
+      "id": "c1ccdd2f-5a50-42fe-9057-1d26ad5b3e0f",
+      "type": "verb",
+      "english": "to come",
+      "turkish": "gelmek",
+      "locative": true
     },
     {
-        "id": "e516659d-073b-4bda-a388-2b4280b46f50",
-        "type": "verb",
-        "english": "to do",
-        "turkish": "yapmak"
+      "id": "e516659d-073b-4bda-a388-2b4280b46f50",
+      "type": "verb",
+      "english": "to do",
+      "turkish": "yapmak"
     },
     {
-        "id": "b8a51771-ec36-4f33-be45-ed59271ccf31",
-        "type": "verb",
-        "english": "to take",
-        "turkish": "almak"
+      "id": "b8a51771-ec36-4f33-be45-ed59271ccf31",
+      "type": "verb",
+      "english": "to take",
+      "turkish": "almak"
     },
     {
-        "id": "8058cba6-0a55-4337-a1c9-c9f89711d4fe",
-        "type": "verb",
-        "english": "to want",
-        "turkish": "istemek"
+      "id": "8058cba6-0a55-4337-a1c9-c9f89711d4fe",
+      "type": "verb",
+      "english": "to want",
+      "turkish": "istemek"
     },
     {
-        "id": "cf4eeadc-1484-4970-98c1-9bea52779f6b",
-        "type": "verb",
-        "english": "to work",
-        "turkish": "çalışmak"
+      "id": "cf4eeadc-1484-4970-98c1-9bea52779f6b",
+      "type": "verb",
+      "english": "to work",
+      "turkish": "çalışmak"
     },
     {
-        "id": "8074f084-1661-4450-b0d6-b0e2ee0a214f",
-        "type": "verb",
-        "english": "to know",
-        "turkish": "bilmek"
+      "id": "8074f084-1661-4450-b0d6-b0e2ee0a214f",
+      "type": "verb",
+      "english": "to know",
+      "turkish": "bilmek"
     },
     {
-        "id": "abe4f58e-3efe-425b-8ac6-273ce1ef5004",
-        "type": "verb",
-        "english": "to speak",
-        "turkish": "konuşmak"
+      "id": "abe4f58e-3efe-425b-8ac6-273ce1ef5004",
+      "type": "verb",
+      "english": "to speak",
+      "turkish": "konuşmak"
     },
     {
-        "id": "a889a812-49d0-412a-8468-1fc4a784a101",
-        "type": "verb",
-        "english": "to read",
-        "turkish": "okumak",
-        "applicableObjects": ["ac25a465-1bf0-4cc3-ab93-f6b163d2c763"]
+      "id": "a889a812-49d0-412a-8468-1fc4a784a101",
+      "type": "verb",
+      "english": "to read",
+      "turkish": "okumak",
+      "applicableObjects": ["ac25a465-1bf0-4cc3-ab93-f6b163d2c763"]
     },
     {
-        "id":"aed9297a-4495-445c-9cc5-84e279e98cee",
-        "type": "verb",
-        "english": "to see",
-        "turkish": "görmek"
+      "id": "aed9297a-4495-445c-9cc5-84e279e98cee",
+      "type": "verb",
+      "english": "to see",
+      "turkish": "görmek"
     },
     {
-        "id":"3278e61f-319c-4719-a6c1-d1df94c8a43e",
-        "type": "verb",
-        "english": "to give",
-        "turkish": "vermek"
+      "id": "3278e61f-319c-4719-a6c1-d1df94c8a43e",
+      "type": "verb",
+      "english": "to give",
+      "turkish": "vermek"
     },
     {
-        "id":"d312c9cf-8d22-4a7a-a55e-4842015b5f85",
-        "type": "verb",
-        "english": "to wait",
-        "turkish": "beklemek"
+      "id": "d312c9cf-8d22-4a7a-a55e-4842015b5f85",
+      "type": "verb",
+      "english": "to wait",
+      "turkish": "beklemek"
     },
     {
-        "id": "328b0a5a-10d5-41c8-87c5-f5f672e2b52a",
-        "type": "verb",
-        "english": "to write",
-        "turkish": "yazmak"
+      "id": "328b0a5a-10d5-41c8-87c5-f5f672e2b52a",
+      "type": "verb",
+      "english": "to write",
+      "turkish": "yazmak"
     },
     {
-        "id": "497983f0-6afb-4cc6-a6a5-e3ac7dcce870",
-        "type": "tense",
-        "english": "present continuous",
-        "turkish": "şimdiki"
+      "id": "497983f0-6afb-4cc6-a6a5-e3ac7dcce870",
+      "type": "tense",
+      "english": "present continuous",
+      "turkish": "şimdiki"
     },
     {
-        "id": "e6018947-bbff-4b59-b6a3-84289c35cde4",
-        "type": "tense",
-        "english": "present simple",
-        "turkish": "geniş"
+      "id": "e6018947-bbff-4b59-b6a3-84289c35cde4",
+      "type": "tense",
+      "english": "present simple",
+      "turkish": "geniş"
     },
     {
-        "id": "baf9fa73-98bd-42ac-acad-5d07846d3876",
-        "type": "tense",
-        "english": "past",
-        "turkish": "geçmiş"
+      "id": "baf9fa73-98bd-42ac-acad-5d07846d3876",
+      "type": "tense",
+      "english": "past",
+      "turkish": "geçmiş"
     },
     {
-        "id": "358b3926-290c-4160-b0a5-db5bf9d9b567",
-        "type": "tense",
-        "english": "future",
-        "turkish": "gelecek"
+      "id": "358b3926-290c-4160-b0a5-db5bf9d9b567",
+      "type": "tense",
+      "english": "future",
+      "turkish": "gelecek"
     },
     {
-        "id": "3e28ffa5-c650-4b42-b5b7-a2229da28ca5",
-        "type": "pronoun",
-        "english": "I",
-        "turkish": "ben",
-        "person": 1,
-        "isPlural": false
+      "id": "3e28ffa5-c650-4b42-b5b7-a2229da28ca5",
+      "type": "pronoun",
+      "english": "I",
+      "turkish": "ben",
+      "person": 1,
+      "isPlural": false
     },
     {
-        "id": "79a25760-83c7-421e-b89b-70aea99c0e53",
-        "type": "pronoun",
-        "english": "you",
-        "turkish": "sen",
-        "person": 2,
-        "isPlural": false
+      "id": "79a25760-83c7-421e-b89b-70aea99c0e53",
+      "type": "pronoun",
+      "english": "you",
+      "turkish": "sen",
+      "person": 2,
+      "isPlural": false
     },
     {
-        "id": "240769ba-9512-40f1-9015-edd226b8c81c",
-        "type": "pronoun",
-        "english": "he",
-        "alternateEnglish": ["she", "it"],
-        "turkish": "o",
-        "person": 3,
-        "isPlural": false
+      "id": "240769ba-9512-40f1-9015-edd226b8c81c",
+      "type": "pronoun",
+      "english": "he",
+      "alternateEnglish": ["she", "it"],
+      "turkish": "o",
+      "person": 3,
+      "isPlural": false
     },
     {
-        "id": "7c2897d2-adde-4ddb-bf93-42851e16536e",
-        "type": "pronoun",
-        "english": "we",
-        "turkish": "biz",
-        "person": 1,
-        "isPlural": true
+      "id": "7c2897d2-adde-4ddb-bf93-42851e16536e",
+      "type": "pronoun",
+      "english": "we",
+      "turkish": "biz",
+      "person": 1,
+      "isPlural": true
     },
     {
-        "id": "7126c189-cbf8-4c22-bd16-b692e06c533a",
-        "type": "pronoun",
-        "english": "you",
-        "turkish": "siz",
-        "person": 2,
-        "isPlural": true
+      "id": "7126c189-cbf8-4c22-bd16-b692e06c533a",
+      "type": "pronoun",
+      "english": "you",
+      "turkish": "siz",
+      "person": 2,
+      "isPlural": true
     },
     {
-        "id": "9808661c-935c-40da-bd43-c55317222a10",
-        "type": "pronoun",
-        "english": "they",
-        "turkish": "onlar",
-        "person": 3,
-        "isPlural": true
+      "id": "9808661c-935c-40da-bd43-c55317222a10",
+      "type": "pronoun",
+      "english": "they",
+      "turkish": "onlar",
+      "person": 3,
+      "isPlural": true
     },
     {
-        "id": "af7c47e3-ccd8-40e5-9069-a54f171f9821",
-        "type": "pronoun",
-        "subtype": "possessive",
-        "english": "my",
-        "turkish": "benim",
-        "person": 1,
-        "isPlural": false
+      "id": "af7c47e3-ccd8-40e5-9069-a54f171f9821",
+      "type": "pronoun",
+      "subtype": "possessive",
+      "english": "my",
+      "turkish": "benim",
+      "person": 1,
+      "isPlural": false
     },
     {
-        "id": "3dd20f18-8a5e-412c-b8f6-e61378f70b42",
-        "type": "pronoun",
-        "subtype": "possessive",
-        "english": "your",
-        "turkish": "senin",
-        "person": 2,
-        "isPlural": false
+      "id": "3dd20f18-8a5e-412c-b8f6-e61378f70b42",
+      "type": "pronoun",
+      "subtype": "possessive",
+      "english": "your",
+      "turkish": "senin",
+      "person": 2,
+      "isPlural": false
     },
     {
-        "id": "0753904a-6ce2-429c-9cfa-295483b181f7",
-        "type": "pronoun",
-        "subtype": "possessive",
-        "english": "her",
-        "turkish": "onun",
-        "person": 3,
-        "isPlural": false
+      "id": "0753904a-6ce2-429c-9cfa-295483b181f7",
+      "type": "pronoun",
+      "subtype": "possessive",
+      "english": "her",
+      "turkish": "onun",
+      "person": 3,
+      "isPlural": false
     },
     {
-        "id": "81ee7b46-9ad9-4f60-ba4c-6c6b85a641f2",
-        "type": "pronoun",
-        "subtype": "possessive",
-        "english": "his",
-        "turkish": "onun",
-        "person": 3,
-        "isPlural": false
+      "id": "81ee7b46-9ad9-4f60-ba4c-6c6b85a641f2",
+      "type": "pronoun",
+      "subtype": "possessive",
+      "english": "his",
+      "turkish": "onun",
+      "person": 3,
+      "isPlural": false
     },
     {
-        "id": "7bf411ce-63c2-4067-a735-bd4fa0a6d699",
-        "type": "pronoun",
-        "subtype": "possessive",
-        "english": "our",
-        "turkish": "bizim",
-        "person": 1,
-        "isPlural": true
+      "id": "7bf411ce-63c2-4067-a735-bd4fa0a6d699",
+      "type": "pronoun",
+      "subtype": "possessive",
+      "english": "our",
+      "turkish": "bizim",
+      "person": 1,
+      "isPlural": true
     },
     {
-        "id": "c34dfcd7-c2d5-411b-a9a4-d27dcb2e6c2b",
-        "type": "pronoun",
-        "subtype": "possessive",
-        "english": "your",
-        "turkish": "sizin",
-        "person": 2,
-        "isPlural": true
+      "id": "c34dfcd7-c2d5-411b-a9a4-d27dcb2e6c2b",
+      "type": "pronoun",
+      "subtype": "possessive",
+      "english": "your",
+      "turkish": "sizin",
+      "person": 2,
+      "isPlural": true
     },
     {
-        "id": "8cc75d82-f5ff-4d68-ba39-c94256285401",
-        "type": "pronoun",
-        "subtype": "possessive",
-        "english": "their",
-        "turkish": "onların",
-        "person": 3,
-        "isPlural": true
+      "id": "8cc75d82-f5ff-4d68-ba39-c94256285401",
+      "type": "pronoun",
+      "subtype": "possessive",
+      "english": "their",
+      "turkish": "onların",
+      "person": 3,
+      "isPlural": true
     },
     {
-        "id": "1d806611-e443-45f6-9764-7483a8e442e8",
-        "type": "number",
-        "english": "one",
-        "turkish": "bir",
-        "numeric": 1
+      "id": "1d806611-e443-45f6-9764-7483a8e442e8",
+      "type": "number",
+      "english": "one",
+      "turkish": "bir",
+      "numeric": 1
     },
     {
-        "id": "7d452a43-6628-4074-a1a0-14f66133d117",
-        "type": "number",
-        "english": "two",
-        "turkish": "iki",
-        "numeric": 2
+      "id": "7d452a43-6628-4074-a1a0-14f66133d117",
+      "type": "number",
+      "english": "two",
+      "turkish": "iki",
+      "numeric": 2
     },
     {
-        "id": "7934d7e8-fb4e-470d-ae49-48ebca309c74",
-        "type": "number",
-        "english": "three",
-        "turkish": "üç",
-        "numeric": 3
+      "id": "7934d7e8-fb4e-470d-ae49-48ebca309c74",
+      "type": "number",
+      "english": "three",
+      "turkish": "üç",
+      "numeric": 3
     },
     {
-        "id": "a77e7058-0919-4c03-bd6f-8ac1e2509abf",
-        "type": "number",
-        "english": "four",
-        "turkish": "dört",
-        "numeric": 4
+      "id": "a77e7058-0919-4c03-bd6f-8ac1e2509abf",
+      "type": "number",
+      "english": "four",
+      "turkish": "dört",
+      "numeric": 4
     },
     {
-        "id": "70d4d1a0-ee5a-4a1b-a3a4-53a535cc2fe9",
-        "type": "number",
-        "english": "five",
-        "turkish": "beş",
-        "numeric": 5
+      "id": "70d4d1a0-ee5a-4a1b-a3a4-53a535cc2fe9",
+      "type": "number",
+      "english": "five",
+      "turkish": "beş",
+      "numeric": 5
     },
     {
-        "id": "7246c2e1-22c2-4017-bbf6-86e0965cc88b",
-        "type": "number",
-        "english": "six",
-        "turkish": "altı",
-        "numeric": 6
+      "id": "7246c2e1-22c2-4017-bbf6-86e0965cc88b",
+      "type": "number",
+      "english": "six",
+      "turkish": "altı",
+      "numeric": 6
     },
     {
-        "id": "6830ca66-dd4d-4ac1-90b1-b9c8d5273463",
-        "type": "number",
-        "english": "seven",
-        "turkish": "yedi",
-        "numeric": 7
+      "id": "6830ca66-dd4d-4ac1-90b1-b9c8d5273463",
+      "type": "number",
+      "english": "seven",
+      "turkish": "yedi",
+      "numeric": 7
     },
     {
-        "id": "1e7b0944-cfe8-4537-9e47-f6a5415eccb1",
-        "type": "number",
-        "english": "eight",
-        "turkish": "sekiz",
-        "numeric": 8
+      "id": "1e7b0944-cfe8-4537-9e47-f6a5415eccb1",
+      "type": "number",
+      "english": "eight",
+      "turkish": "sekiz",
+      "numeric": 8
     },
     {
-        "id": "2f88717b-332f-4342-8cc9-a27abcb3e689",
-        "type": "number",
-        "english": "nine",
-        "turkish": "dokuz",
-        "numeric": 9
+      "id": "2f88717b-332f-4342-8cc9-a27abcb3e689",
+      "type": "number",
+      "english": "nine",
+      "turkish": "dokuz",
+      "numeric": 9
     },
     {
-        "id": "79491693-542d-4265-901f-60703dcaa351",
-        "type": "number",
-        "english": "zero",
-        "turkish": "sıfır",
-        "numeric": 0
+      "id": "79491693-542d-4265-901f-60703dcaa351",
+      "type": "number",
+      "english": "zero",
+      "turkish": "sıfır",
+      "numeric": 0
     },
     {
-        "id": "7fdc3a1a-e752-4261-ac08-06e8417be761",
-        "type": "number",
-        "english": "ten",
-        "turkish": "on",
-        "numeric": 10
+      "id": "7fdc3a1a-e752-4261-ac08-06e8417be761",
+      "type": "number",
+      "english": "ten",
+      "turkish": "on",
+      "numeric": 10
     },
     {
-        "id": "10dc9788-5ed3-4532-8fba-2a341114af50",
-        "type": "number",
-        "english": "twenty",
-        "turkish": "yirmi",
-        "numeric": 20
+      "id": "10dc9788-5ed3-4532-8fba-2a341114af50",
+      "type": "number",
+      "english": "twenty",
+      "turkish": "yirmi",
+      "numeric": 20
     },
     {
-        "id": "451d9d36-a1e6-434c-8ed6-b5a54eff17a1",
-        "type": "number",
-        "english": "thirty",
-        "turkish": "otuz",
-        "numeric": 30
+      "id": "451d9d36-a1e6-434c-8ed6-b5a54eff17a1",
+      "type": "number",
+      "english": "thirty",
+      "turkish": "otuz",
+      "numeric": 30
     },
     {
-        "id": "c7450e87-9098-4b3e-9149-8022798a246c",
-        "type": "number",
-        "english": "forty",
-        "turkish": "kırk",
-        "numeric": 40
+      "id": "c7450e87-9098-4b3e-9149-8022798a246c",
+      "type": "number",
+      "english": "forty",
+      "turkish": "kırk",
+      "numeric": 40
     },
     {
-        "id": "9b1c3077-0f33-4ff2-9902-0d1e6fb22f85",
-        "type": "number",
-        "english": "fifty",
-        "turkish": "elli",
-        "numeric": 50
+      "id": "9b1c3077-0f33-4ff2-9902-0d1e6fb22f85",
+      "type": "number",
+      "english": "fifty",
+      "turkish": "elli",
+      "numeric": 50
     },
     {
-        "id": "cc810d34-985f-4386-a254-6133ac751b49",
-        "type": "number",
-        "english": "sixty",
-        "turkish": "altmış",
-        "numeric": 60
+      "id": "cc810d34-985f-4386-a254-6133ac751b49",
+      "type": "number",
+      "english": "sixty",
+      "turkish": "altmış",
+      "numeric": 60
     },
     {
-        "id": "c3d49970-02c7-4720-ade9-c4ce0ec0abdf",
-        "type": "number",
-        "english": "seventy",
-        "turkish": "yetmiş",
-        "numeric": 70
+      "id": "c3d49970-02c7-4720-ade9-c4ce0ec0abdf",
+      "type": "number",
+      "english": "seventy",
+      "turkish": "yetmiş",
+      "numeric": 70
     },
     {
-        "id": "c4d76143-0495-4506-902e-f752632287f1",
-        "type": "number",
-        "english": "eighty",
-        "turkish": "seksen",
-        "numeric": 80
+      "id": "c4d76143-0495-4506-902e-f752632287f1",
+      "type": "number",
+      "english": "eighty",
+      "turkish": "seksen",
+      "numeric": 80
     },
     {
-        "id": "0a3c57c6-4519-47a2-b22b-d218ccbb7cac",
-        "type": "number",
-        "english": "ninety",
-        "turkish": "doksan",
-        "numeric": 90
+      "id": "0a3c57c6-4519-47a2-b22b-d218ccbb7cac",
+      "type": "number",
+      "english": "ninety",
+      "turkish": "doksan",
+      "numeric": 90
     },
     {
-        "id": "22ec11bd-b763-4980-a2fc-d078693c9d0c",
-        "type": "number",
-        "english": "one hundred",
-        "turkish": "yüz",
-        "numeric": 100
+      "id": "22ec11bd-b763-4980-a2fc-d078693c9d0c",
+      "type": "number",
+      "english": "one hundred",
+      "turkish": "yüz",
+      "numeric": 100
     },
     {
-        "id": "b867d0e2-339e-4367-8ca0-ba445cd42d54",
-        "type": "number",
-        "english": "one thousand",
-        "turkish": "bin",
-        "numeric": 1000
+      "id": "b867d0e2-339e-4367-8ca0-ba445cd42d54",
+      "type": "number",
+      "english": "one thousand",
+      "turkish": "bin",
+      "numeric": 1000
     },
     {
-        "id": "94d2ec7d-65d1-4df2-8171-418e773b99fe",
-        "type": "number",
-        "english": "one million",
-        "turkish": "milyon",
-        "numeric": 1000000
+      "id": "94d2ec7d-65d1-4df2-8171-418e773b99fe",
+      "type": "number",
+      "english": "one million",
+      "turkish": "milyon",
+      "numeric": 1000000
     },
     {
-        "id": "215f8aa2-ba47-470a-a9f1-ff9a74befec4",
-        "type": "number",
-        "english": "one billion",
-        "turkish": "milyar",
-        "numeric": 1000000000
+      "id": "215f8aa2-ba47-470a-a9f1-ff9a74befec4",
+      "type": "number",
+      "english": "one billion",
+      "turkish": "milyar",
+      "numeric": 1000000000
     }
-]
+  ]
+}

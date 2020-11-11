@@ -1,13 +1,15 @@
 import { keyNames } from '../utils/keys'
 import * as tilemapData from './tilemap-data.json'
 import * as seedrandom from 'seedrandom'
-
+import { buildLanguageDatabase } from './../language/language-database'
 /* 
   This modules creates a "makeFrame" function that can be called at varying 
   framerates to create individual forest map frames 
 */
 
 export function createFramemaker(renderer, tilemap, atlasTextures, mapConfig) {
+  const wordDb = buildLanguageDatabase()
+
   const paintGroundTiles = (atlasTextures, gameState) => {
     const tileCenterOffset = {
       x: gameState.player.x % mapConfig.tileSize,
@@ -65,6 +67,24 @@ export function createFramemaker(renderer, tilemap, atlasTextures, mapConfig) {
             const p2 = Math.floor(myrng() * mapConfig.treeTileNames.length)
             tilemap.addFrame(
               atlasTextures[mapConfig.treeTileNames[p2]],
+              x * mapConfig.tileSize,
+              y * mapConfig.tileSize
+            )
+          }
+
+          const p3 = myrng()
+          if (p3 < 0.15) {
+            const p4 = Math.floor(myrng() * wordDb.words.all.length)
+            const word = wordDb.words.all[p4]
+            const text = new PIXI.Text(word.turkish, {
+              fontFamily: 'Arial',
+              fontSize: 24,
+              fill: 0xffffff,
+              align: 'center'
+            })
+            text.updateText()
+            tilemap.addFrame(
+              text.texture,
               x * mapConfig.tileSize,
               y * mapConfig.tileSize
             )

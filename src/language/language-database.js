@@ -2,14 +2,14 @@ import _ from 'lodash'
 import * as wordJSON from './words.json'
 
 export function buildLanguageDatabase() {
-  const all = wordJSON
-  const verbs = wordJSON.filter((w) => w.type == 'verb')
-  const commonNouns = wordJSON.filter((w) => w.type == 'common noun')
-  const properNouns = wordJSON.filter((w) => w.type == 'proper noun')
+  const all = wordJSON.words
+  const verbs = all.filter((w) => w.type == 'verb')
+  const commonNouns = all.filter((w) => w.type == 'common noun')
+  const properNouns = all.filter((w) => w.type == 'proper noun')
   const allNouns = commonNouns.concat(properNouns)
-  const verbTenses = wordJSON.filter((w) => w.type == 'tense')
-  const pronouns = wordJSON.filter((w) => w.type == 'pronoun')
-  const numbers = wordJSON.filter((w) => w.type == 'number')
+  const verbTenses = all.filter((w) => w.type == 'tense')
+  const pronouns = all.filter((w) => w.type == 'pronoun')
+  const numbers = all.filter((w) => w.type == 'number')
 
   const getVerbByEnglishText = (english) => {
     return _.find(verbs, (v) => v.english == english)
@@ -24,7 +24,7 @@ export function buildLanguageDatabase() {
   }
 
   return {
-    word: {
+    words: {
       all,
       verbs,
       commonNouns,
