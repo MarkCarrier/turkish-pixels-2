@@ -477,6 +477,17 @@
       "english": "one billion",
       "turkish": "milyar",
       "numeric": 1000000000
-    }
+    },
+    {
+      "turkish": "düzenlemek"
+    },
+    {
+      "turkish": "dolayısıyla"
+    },
+    { "turkish": "haklı" },
+    { "turkish": "itibaren" },
+    { "turkish": "güncellemek" },
+    { "turkish": "eklemek" },
+    { "turkish": "neyse" }
   ]
 }

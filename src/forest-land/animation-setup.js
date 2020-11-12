@@ -8,6 +8,7 @@ import {
   of
 } from 'rxjs'
 import {
+  buffer,
   distinctUntilChanged,
   map,
   scan,
@@ -28,7 +29,8 @@ export function renderForestLand(renderer, initialGameState) {
       player: {
         x: 0,
         y: 0
-      }
+      },
+      wordsOnMap: {}
     })
 
     const canvasSize = {
@@ -102,14 +104,16 @@ export function renderForestLand(renderer, initialGameState) {
       }))
     )
 
-    merge(mouseUps$, touchEnds$)
-      .pipe(
-        withLatestFrom(gameState$),
-        map(([locationClick, gameState]) =>
-          processTargetClick(locationClick, gameState)
-        )
+    const mapLocationClicksAndTaps$ = merge(mouseUps$, touchEnds$).pipe(
+      withLatestFrom(gameState$),
+      map(([locationClick, gameState]) =>
+        processTargetClick(locationClick, gameState)
       )
-      .subscribe((gameState) => gameState$.next(gameState))
+    )
+
+    mapLocationClicksAndTaps$.subscribe((gameState) =>
+      gameState$.next(gameState)
+    )
 
     loader.load(setup)
 
@@ -123,10 +127,37 @@ export function renderForestLand(renderer, initialGameState) {
         mapConfig
       )
 
-      const frames$ = buildAnimationFrameClock().pipe(
-        withLatestFrom(keyHolds$, gameState$),
-        map(([deltaTime, keyHolds, gameState]) =>
-          makeFrame(deltaTime, gameState, keyHolds)
+      const frameClock$ = buildAnimationFrameClock()
+
+      const tileArrivals$ = gameState$.pipe(
+        map((gameState) => gameState.player),
+        map((player) => {
+          const tileCenterOffset = {
+            x: player.x % mapConfig.tileSize,
+            y: player.y % mapConfig.tileSize
+          }
+          const tilePosX = (player.x - tileCenterOffset.x) / mapConfig.tileSize
+          const tilePosY = (player.y - tileCenterOffset.y) / mapConfig.tileSize
+
+          return {
+            x: tilePosX,
+            y: tilePosY
+          }
+        }),
+        distinctUntilChanged(
+          (left, right) =>
+            left !== null &&
+            right !== null &&
+            left.x === right.x &&
+            left.y === right.y
+        ),
+        buffer(frameClock$)
+      )
+
+      const frames$ = frameClock$.pipe(
+        withLatestFrom(keyHolds$, gameState$, tileArrivals$),
+        map(([deltaTime, keyHolds, gameState, tileArrivals]) =>
+          makeFrame(deltaTime, gameState, keyHolds, tileArrivals)
         ),
         tap((gameState) => gameState$.next(gameState))
       )

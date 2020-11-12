@@ -31,14 +31,14 @@ export function createFramemaker(renderer, tilemap, atlasTextures, mapConfig) {
         y <= mapConfig.totalNumberOfTilesToPaint.y;
         y++
       ) {
-        const tilePosX =
-          (gameState.player.x - tileCenterOffset.x) / mapConfig.tileSize + x
-        const tilePosY =
-          (gameState.player.y - tileCenterOffset.y) / mapConfig.tileSize + y
+        const tilePos = {
+          x: (gameState.player.x - tileCenterOffset.x) / mapConfig.tileSize + x,
+          y: (gameState.player.y - tileCenterOffset.y) / mapConfig.tileSize + y
+        }
 
         let tileTexture
         const tileNameOverride =
-          tilemapData.groundTileOverrides[`${tilePosX}/${tilePosY}`]
+          tilemapData.groundTileOverrides[`${tilePos.x}/${tilePos.y}`]
 
         if (tileNameOverride) {
           tileTexture = atlasTextures[tileNameOverride]
@@ -51,7 +51,7 @@ export function createFramemaker(renderer, tilemap, atlasTextures, mapConfig) {
           y * mapConfig.tileSize
         )
 
-        const extraObjects = tilemapData.objects[`${tilePosX}/${tilePosY}`]
+        const extraObjects = tilemapData.objects[`${tilePos.x}/${tilePos.y}`]
         if (extraObjects && extraObjects.length) {
           tilemap.addFrame(
             atlasTextures[extraObjects[0]],
@@ -60,8 +60,8 @@ export function createFramemaker(renderer, tilemap, atlasTextures, mapConfig) {
           )
         }
 
-        if (tilePosY < -5 || tilePosY > 5) {
-          const myrng = new seedrandom(`trees-${tilePosX}/${tilePosY}`)
+        if (tilePos.y < -5 || tilePos.y > 5) {
+          const myrng = new seedrandom(`trees-${tilePos.x}/${tilePos.y}`)
           const p = myrng()
           if (p < 0.7) {
             const p2 = Math.floor(myrng() * mapConfig.treeTileNames.length)
@@ -72,10 +72,8 @@ export function createFramemaker(renderer, tilemap, atlasTextures, mapConfig) {
             )
           }
 
-          const p3 = myrng()
-          if (p3 < 0.15) {
-            const p4 = Math.floor(myrng() * wordDb.words.all.length)
-            const word = wordDb.words.all[p4]
+          const word = getWordForTile(tilePos)
+          if (word) {
             let text = new PIXI.Text(word.turkish, {
               fontFamily: 'Arial',
               fontSize: 24,
@@ -221,7 +219,69 @@ export function createFramemaker(renderer, tilemap, atlasTextures, mapConfig) {
     return false
   }
 
-  const makeFrame = (deltaTime, gameState, keyHolds) => {
+  const getWordForTile = (tilePos) => {
+    if (tilePos.y >= -5 && tilePos.y <= 5) return null
+
+    if (tilePos.x % 2 !== 0 || tilePos.y % 2 !== 0) return null
+
+    const myrng = new seedrandom(`wordtiles-${tilePos.x}/${tilePos.y}`)
+    const p = myrng()
+    if (p > 0.2) {
+      return null
+    } else {
+      const p2 = Math.floor(myrng() * wordDb.words.all.length)
+      return wordDb.words.all[p2]
+    }
+  }
+
+  const buildWordBox = (labelText,boxWidth,boxHeight) => {
+    let wordBox = new PIXI.Container()
+    let graphics = new PIXI.Graphics()
+    graphics.beginFill(0x2c3e50, 0.2)
+    graphics.drawRoundedRect(0, 0, boxWidth, boxHeight, 10)
+    graphics.endFill()
+    wordBox.addChild(graphics)
+    let text = new PIXI.Text(labelText, {
+      fontFamily: 'Arial',
+      fontSize: 24,
+      fontWeight: 'bold',
+      fill: 0xffffff,
+      align: 'center'
+    })
+    text.resolution = 2
+    text.x = boxWidth / 2 - text.width / 2
+    text.y = boxHeight / 2 - text.height / 2
+    wordBox.addChild(text)    
+
+    return wordBox
+  }
+
+  const displayWordTranslations = (word, gameState) => {
+    const boxWidth = 100
+    const boxHeight = 50
+    let wordBox1 = buildWordBox(word.english,boxWidth,boxHeight)
+    wordBox1.x = mapConfig.playerOffset.x - boxWidth - 50
+    wordBox1.y = mapConfig.playerOffset.y + boxHeight / 2
+
+    let wordBox2 = buildWordBox(wordDb.words.all[9].english,boxWidth,boxHeight)
+    wordBox2.x = mapConfig.playerOffset.x + 50
+    wordBox2.y = mapConfig.playerOffset.y + boxHeight / 2
+
+    let wordBox3 = buildWordBox(wordDb.words.all[23].english,boxWidth,boxHeight)
+    wordBox3.x = mapConfig.playerOffset.x - boxWidth / 2
+    wordBox3.y = mapConfig.playerOffset.y - 50
+
+    let wordBox4= buildWordBox(wordDb.words.all[33].english,boxWidth,boxHeight)
+    wordBox4.x = mapConfig.playerOffset.x - boxWidth / 2
+    wordBox4.y = mapConfig.playerOffset.y + 50 + boxHeight
+
+    renderer.stage.addChild(wordBox1)
+    renderer.stage.addChild(wordBox2)
+    renderer.stage.addChild(wordBox3)
+    renderer.stage.addChild(wordBox4)
+  }
+
+  const makeFrame = (deltaTime, gameState, keyHolds, tileArrivals) => {
     stats.begin()
 
     let nextState = {
@@ -234,26 +294,36 @@ export function createFramemaker(renderer, tilemap, atlasTextures, mapConfig) {
       nextState = paintGroundTiles(atlasTextures, nextState)
     }
 
-    let nextPosition
-    if (keyHolds.length) {
-      nextState.mouseClickTarget = null
-      nextPosition = calculateNextPositionFromKeys(
-        keyHolds,
-        distanceToTravel,
-        gameState
-      )
-    } else if (gameState.mouseClickTarget) {
-      nextPosition = calculateNextPositionFromMouseClickTarget(
-        distanceToTravel,
-        gameState
-      )
-      if (!nextPosition) nextState.mouseClickTarget = null
+    let tileWordToActivate = null
+    if (tileArrivals.length) {
+      tileWordToActivate = getWordForTile(tileArrivals[0])
     }
 
-    if (nextPosition) {
-      tilemap.pivot.set(nextPosition[0], nextPosition[1])
-      nextState.player.x = nextPosition[0]
-      nextState.player.y = nextPosition[1]
+    if (tileWordToActivate) {
+      displayWordTranslations(tileWordToActivate, gameState)
+      nextState.wordChallengeActive = true
+    } else if(!gameState.wordChallengeActive) {
+      let nextPosition
+      if (keyHolds.length) {
+        nextState.mouseClickTarget = null
+        nextPosition = calculateNextPositionFromKeys(
+          keyHolds,
+          distanceToTravel,
+          gameState
+        )
+      } else if (gameState.mouseClickTarget) {
+        nextPosition = calculateNextPositionFromMouseClickTarget(
+          distanceToTravel,
+          gameState
+        )
+        if (!nextPosition) nextState.mouseClickTarget = null
+      }
+
+      if (nextPosition) {
+        tilemap.pivot.set(nextPosition[0], nextPosition[1])
+        nextState.player.x = nextPosition[0]
+        nextState.player.y = nextPosition[1]
+      }
     }
     stats.end()
 
